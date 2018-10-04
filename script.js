@@ -31,11 +31,14 @@ $(document).ready(function(){
           }
       });
     });
-  })
-  function openSearch() {
-    document.getElementById("myOverlay").style.display = "block";
-  }
-  
-  function closeSearch() {
-    document.getElementById("myOverlay").style.display = "none";
-  }
+
+    // Fade toggle registered
+    $('.openBtn').on('click', function(){
+      $('#myOverlay').fadeIn(300);
+    });
+
+    $('.closebtn').on('click', function(){
+      $('#myOverlay').fadeOut(300);
+    });
+
+  });
